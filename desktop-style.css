@@ -1,0 +1,81 @@
+/* Desktop */
+@media only screen and (min-width: 1023px) {
+
+    /* Main */
+    .main-container {
+        grid-template-columns: 320px auto;
+        column-gap: 10%;
+        max-width: 1400px;
+    }
+
+    /* Header */
+    h1#header-name {
+        font-size: 3.2rem;
+    }
+
+    h2#header-title {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    p#header-title-info {
+        font-size: .85rem;
+        line-height: 1.2;
+        width: 80%;
+    }
+
+    /* Nav */
+    nav {
+        display: flex;
+        flex-direction:column;
+    }
+    
+    #nav-list {
+        flex-direction:column;
+        align-items: end;
+        gap: var(--small-spacing);
+        list-style-type: none;
+        height: unset;
+        text-align: right;
+    }
+
+    #nav-list a:hover {
+        padding-right: 3rem;
+        color: var(--accent-color);
+        transition: padding .3s ease-in-out;
+    }
+
+    .sub-list {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        overflow-y: auto;
+        height: unset;
+        max-height: unset;
+        padding: unset;
+        border: none;
+        background-color: unset;
+    }
+    
+    .sub-list li {
+        padding: var(--small-spacing) 2rem var(--small-spacing) 0;
+        text-align: right;
+    }
+
+    .sub-list li:hover {
+        background-color: unset;  
+    }
+    
+    .hidden {
+        overflow-y: unset;
+        max-height: unset;
+        padding: unset;
+    }
+
+    #nav-projects a {
+        pointer-events:all;
+    }
+
+}
