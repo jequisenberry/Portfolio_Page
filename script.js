@@ -44,7 +44,7 @@ const Site_Handler = {
             About_Me        :
                 "Detail-oriented HTML email and front-end developer dedicated to creating high-performance, visually consistent email templates and webpages that deliver seamless experiences across platforms. Proficient in HTML, CSS, and front-end JavaScript, with expertise in responsive design and development best practices. An enthusiastic learner who brings creative problem-solving and technical expertise to dynamic development teams.",
             Email_Link: "jason.quisenberry@proton.me",
-            Resume_Link     : "/",
+            Resume_Link     : "Resume.pdf",
             Linked_In_Link  : "www.linkedin.com/in/jason-quisenberry",
             GitHub_Link     : "https://github.com/jequisenberry"
 
@@ -208,8 +208,8 @@ const Site_Handler = {
                         </div>
                     </div>
                     <div class="project-item-links">
-                        <a href="${project.pageLink}">View Project</a>
-                        <a href="${project.gitLink}">View GitHub</a>
+                        <a href="${project.pageLink}" rel="noopener noreferrer">View Project</a>
+                        <a href="${project.gitLink}" rel="noopener noreferrer">View GitHub</a>
                     </div>
                 `;
     
